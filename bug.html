@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text is visible.
+  </div>
+  <script>
+    //Attempting to access an element that doesn't exist yet
+    document.getElementById('myDiv2').innerHTML = "This text won't be visible";
+  </script>
+</body>
+</html>
